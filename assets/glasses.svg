@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" aria-labelledby="title desc" role="img">
+  <title id="title">Stylized retro glasses</title>
+  <desc id="desc">Simple outline of retro, round glasses evoking Steve Wozniak vibes</desc>
+  <defs>
+    <style>
+      .frame{fill:none;stroke:#47c6ac;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .bridge{fill:none;stroke:#47c6ac;stroke-width:5;stroke-linecap:round}
+    </style>
+  </defs>
+  <circle class="frame" cx="40" cy="30" r="20"/>
+  <circle class="frame" cx="120" cy="30" r="20"/>
+  <path class="bridge" d="M60 28c6-6 34-6 40 0"/>
+  <path class="frame" d="M6 30h8"/>
+  <path class="frame" d="M146 30h8"/>
+</svg>
+

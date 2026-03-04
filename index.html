@@ -2,11 +2,244 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ethical hacking rooted in playful precision — audits, pentests, education. A Wozniak-inspired one‑pager." />
+    <title>Ethical Hacker · Playful Precision</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Local styles for validation guardrails -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="noise-bg">
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Primary">
+        <a href="#home" class="brand" aria-label="Home">
+          <img src="./assets/glasses.svg" width="36" height="14" alt="Stylized glasses icon" />
+          <span class="brand-text">woz.ethical</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ethos">Ethos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="cta-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home" tabindex="-1">
+      <!-- Hero -->
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="container grid-hero">
+          <div class="hero-copy">
+            <h1 id="hero-title">Ethical Hacking Rooted in <span class="accent">Playful Precision</span></h1>
+            <p class="lead">Curious like a garage tinkerer, rigorous like a seasoned engineer. I probe systems to help teams learn, harden, and ship with confidence — with a dash of Woz‑like whimsy.</p>
+            <div class="actions">
+              <a class="btn btn-accent" href="#services">See Services</a>
+              <a class="btn btn-ghost" href="data:text/plain;charset=utf-8,Project%20Brief%5Cn%5CnGoals%3A%20%5BYour%20goals%5D%5CnScope%3A%20%5BWeb%2FMobile%2FEmbedded%5D%5CnTimeline%3A%5B%5D%5CnSecurity%20Concerns%3A%5B%5D" download="ethical-hacking-brief.txt">Download Brief</a>
+            </div>
+            <ul class="cred-list" aria-label="Highlights">
+              <li>OWASP aligned</li>
+              <li>Zero‑trust friendly</li>
+              <li>Education‑first</li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <img src="./assets/glasses.svg" alt="" class="hero-glasses" />
+            <div class="circuit motif" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <a href="#ethos" class="scroll-down" aria-label="Scroll to ethos">▾</a>
+      </section>
+
+      <!-- Ethos / Philosophy -->
+      <section id="ethos" class="section" aria-labelledby="ethos-title">
+        <div class="container">
+          <h2 id="ethos-title" class="section-title">Ethos</h2>
+          <article class="ethos">
+            <p>Guided by playful engineering and a love for open systems, I pursue bugs to empower builders — not embarrass them. Clear write‑ups, reproducible demos, and teach‑backs make security an amplifier for your roadmap.</p>
+            <blockquote class="woz-quote">
+              <p>“The best hacks teach. Curiosity first, kindness always.”</p>
+              <footer>— Woz‑inspired mantra</footer>
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section id="services" class="section" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="section-title">Services</h2>
+          <div class="services-grid">
+            <article class="card reveal" aria-labelledby="svc1-title">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label="Shield icon"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <h3 id="svc1-title">Security Audits</h3>
+              <p>Source‑level and black‑box reviews for web, mobile, and cloud. Actionable findings sorted by exploitability and effort.</p>
+            </article>
+
+            <article class="card reveal" aria-labelledby="svc2-title">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label="Target icon"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+              </div>
+              <h3 id="svc2-title">Bug Bounty Research</h3>
+              <p>Methodical recon and responsible disclosure. I play nice with triage and help teams harden quickly.</p>
+            </article>
+
+            <article class="card reveal" aria-labelledby="svc3-title">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label="Chip icon"><rect x="5" y="5" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2"><path d="M12 1v4"/><path d="M12 19v4"/><path d="M1 12h4"/><path d="M19 12h4"/></g></svg>
+              </div>
+              <h3 id="svc3-title">Embedded Device Pentest</h3>
+              <p>JTAG, UART, and firmware spelunking with a light touch. From IoT to edge compute, I map and minimize attack paths.</p>
+            </article>
+
+            <article class="card reveal" aria-labelledby="svc4-title">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label="Book icon"><path d="M4 5a2 2 0 012-2h12v18H6a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 5h10" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <h3 id="svc4-title">Security Training</h3>
+              <p>Hands‑on workshops for engineers and PMs — threat modeling, secure code review, and incident practice.</p>
+            </article>
+          </div>
+          <div class="grid-actions">
+            <a class="link" href="#portfolio">See case studies →</a>
+            <a class="btn btn-small btn-orange" href="#contact">Request audit</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process / Timeline -->
+      <section id="process" class="section" aria-labelledby="process-title">
+        <div class="container">
+          <h2 id="process-title" class="section-title">Process</h2>
+          <ol class="timeline" role="list">
+            <li class="step reveal"><span class="num">1</span><h3>Discover</h3><p>Scope, architecture, and goals — align on impact over noise.</p></li>
+            <li class="step reveal"><span class="num">2</span><h3>Pen‑test</h3><p>Instrumented probing, fuzzing, and exploit development where appropriate.</p></li>
+            <li class="step reveal"><span class="num">3</span><h3>Report</h3><p>Prioritized findings with clear repro and remediation paths.</p></li>
+            <li class="step reveal"><span class="num">4</span><h3>Educate</h3><p>Debrief, teach‑backs, and playbooks to keep wins compounding.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Portfolio / Case studies -->
+      <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+        <div class="container">
+          <h2 id="portfolio-title" class="section-title">Portfolio</h2>
+          <div class="portfolio-grid">
+            <article class="case card reveal">
+              <header>
+                <h3>Fintech Web App</h3>
+                <p class="sub">Anon Series B • SaaS</p>
+              </header>
+              <ul class="metrics" aria-label="Metrics">
+                <li><strong>63%</strong> exploit surface reduction</li>
+                <li><strong>12</strong> authz flaws eradicated</li>
+              </ul>
+              <p>Threat‑modeled multi‑tenant auth and hardened session lifecycle. Delivered dev‑ready mitigations.</p>
+              <p><a class="link" href="#" aria-disabled="true">Full case study (PDF) ↗</a></p>
+            </article>
+
+            <article class="case card reveal">
+              <header>
+                <h3>IoT Gateway</h3>
+                <p class="sub">Edge Compute • Private</p>
+              </header>
+              <ul class="metrics" aria-label="Metrics">
+                <li><strong>37</strong> potential vectors mapped</li>
+                <li><strong>6</strong> criticals responsibly disclosed</li>
+              </ul>
+              <p>Firmware extraction, UART console hardening, and secure boot recommendations.</p>
+              <p><a class="link" href="#" aria-disabled="true">Full case study (PDF) ↗</a></p>
+            </article>
+
+            <article class="case card reveal">
+              <header>
+                <h3>Mobile API</h3>
+                <p class="sub">Healthtech • HIPAA</p>
+              </header>
+              <ul class="metrics" aria-label="Metrics">
+                <li><strong>9</strong> sensitive data leaks plugged</li>
+                <li><strong>99.95%</strong> uptime preserved</li>
+              </ul>
+              <p>Probed token scopes, tightened CORS and rate limits, and codified secure release checklists.</p>
+              <p><a class="link" href="#" aria-disabled="true">Full case study (PDF) ↗</a></p>
+            </article>
+          </div>
+          <blockquote class="endorsement">
+            <p>“Engineering joy meets security rigor — exactly the spirit that sparks great products.”</p>
+            <footer>— A friendly nod to the Woz ethos</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contact / CTA -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="section-title">Let’s collaborate</h2>
+          <div class="contact-grid">
+            <form class="contact-form" aria-describedby="contact-help" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" minlength="2" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="subject">Project</label>
+                <input id="subject" name="subject" type="text" placeholder="Brief description" />
+              </div>
+              <div class="actions">
+                <button class="btn btn-orange" type="submit">Request Audit</button>
+                <a class="btn btn-ghost" href="mailto:hello@example.com?subject=Ethical%20Hacking%20Inquiry">Or email directly</a>
+              </div>
+              <p id="contact-help" class="help">Fields are non‑binding. Submitting opens an email draft you can edit.</p>
+            </form>
+
+            <aside class="contact-meta">
+              <h3>Other links</h3>
+              <ul class="links">
+                <li><a class="link" href="mailto:hello@example.com">hello@example.com</a></li>
+                <li><a class="link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+                <li><a class="link" href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+              </ul>
+
+              <form class="subscribe" aria-label="Subscribe to Weekly Insights" novalidate>
+                <label for="subscribe-email">Subscribe to Weekly Insights</label>
+                <div class="subscribe-row">
+                  <input id="subscribe-email" type="email" placeholder="you@company.com" />
+                  <button type="submit" class="btn btn-small">Subscribe</button>
+                </div>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="#contact" class="fab" aria-label="Book Audit">Book Audit</a>
+
+    <footer class="site-footer">
+      <div class="container small">
+        <p>© <span id="year"></span> woz.ethical — Built with care.</p>
+      </div>
+    </footer>
+
+    <!-- Local script for validation guardrails -->
     <script src="./script.js" defer></script>
   </body>
 </html>
+

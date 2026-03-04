@@ -77,6 +77,10 @@ h3 { font-weight: 600; }
 .nav-list .cta-link { color: var(--bg); background: var(--teal); }
 .nav-list .cta-link:hover, .nav-list .cta-link:focus { background: #3ab79e; }
 
+/* Anchor targets: offset for sticky header */
+section[id],
+main[id] { scroll-margin-top: 76px; }
+
 /* Hero */
 .hero { padding-top: 8rem; }
 .grid-hero { display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 2rem; }
